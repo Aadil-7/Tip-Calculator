@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(247, 212, 247);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.total-billperperson::before,
+.billamount::before {
+    content: '$';
+    padding: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(47, 18, 74);
+    width: 300px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 0px 8px black;
+    padding: 15px;
+    margin: 0;
+}
+
+.cal-body{
+    background-color: rgb(47, 18, 74);
+    padding: 15px;
+    width: 300px;
+    margin: 0;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 2px 8px black;
+}
+
+p {
+    font-size: .8rem;
+    color: lightgray;
+}
+
+input {
+    width: 95%;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 5px 5px 10px;
+    background-color: aliceblue;
+}
+
+button {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    width: 22px;
+    height: 22px;
+    background-color: aliceblue;
+}
+
+button:hover{
+    background-color: rgb(247, 212, 247);
+}
+
+.total-billperperson {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+#numberofperson {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
