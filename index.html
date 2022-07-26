@@ -12,11 +12,11 @@
 <body>
     <h1>Tip Calculator</h1>
     <div class="cal-body">
-        <p class="billamount">Bill Amount</p>
+        <p>Bill Amount</p>
         <input type="text" placeholder="Enter bill amount here" id="billAmount">
 
         <p>Tip Percentage</p>
-        <input type="text" placeholder="Enter tip percentage here" id="billAmount">
+        <input type="text" placeholder="Enter tip percentage here" id="tipPercent">
         <div class="bottom">
             <div>
                 <p>Number of Persons</p>
@@ -26,10 +26,11 @@
             </div>
             <div>
                 <p>Total Amount Per Person</p>
-                <div class="total-billperperson">0</div>
+                <div class="total-billperperson" id="totalBillPerPerson">0</div>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
