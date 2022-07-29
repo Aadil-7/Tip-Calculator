@@ -4,6 +4,7 @@ let numberOfPers = document.getElementById('numberofperson');
 let billAmount = document.getElementById('billAmount');
 let tip = document.getElementById('tipPercent');
 let billPerPerson = document.getElementById('totalBillPerPerson');
+const negativeMes = document.getElementById('nonegative');
 
 let numberOfPersons = 0;
 increament.onclick = () => {
@@ -14,7 +15,8 @@ increament.onclick = () => {
 
 decreament.onclick = () => {
     if (numberOfPersons <= 1) {
-        alert(`Hmm... Number of persons cannot be less than one!`)
+        negativeMes.innerText = `Number of persons cannot be less than 1.`
+        negativeMes.classList.add(`zindex`)
         return
     }
     numberOfPersons = numberOfPersons - 1;

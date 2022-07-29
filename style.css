@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,10 +22,13 @@ h1 {
     text-transform: uppercase;
     color: aliceblue;
     text-align: center;
-    background-color: rgb(47, 18, 74);
-    width: 300px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 0px 0px 8px black;
+    background-color: rgb(73, 39, 104);
+    width: auto;
+    border-radius: 15px;
+    box-shadow: inset -8px 0px 8px rgb(0, 0, 0, 0.15),
+    inset -8px 0px 8px rgb(0, 0, 0, 0.25),
+    0 0 0 0 rgb(0, 0, 0, 0.75),
+    5px 10px 20px rgb(0, 0, 0, 0.4);
     padding: 15px;
     margin: 0;
 }
@@ -33,10 +36,14 @@ h1 {
 .cal-body{
     background-color: rgb(47, 18, 74);
     padding: 15px;
-    width: 300px;
+    width: auto;
     margin: 0;
-    border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 2px 8px black;
+    border-radius: 15px;
+    box-shadow: inset -8px 0px 8px rgb(0, 0, 0, 0.25),
+    inset -8px 0px 8px rgb(0, 0, 0, 0.25),
+    0 0 0 0 rgb(0, 0, 0, 0.75),
+    5px 10px 20px rgb(0, 0, 0, 0.4);
+    z-index: -4;
 }
 
 p {
@@ -83,4 +90,31 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#nonegative {
+    
+    display: flex;
+    text-align: center;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#nonegative p {
+    color:  black;
+}
+
+.zindex {
+    background-color: rgb(53, 25, 53);
+    border: 2px dashed rgb(247, 212, 247);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    width: auto ;
+    height: auto;
+    transform: scale(1.2);
 }
